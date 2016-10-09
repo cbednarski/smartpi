@@ -1,0 +1,5 @@
+#!ipxe
+# /srv/tftpboot/smartos.ipxe.tpl
+kernel /smartos/20160929T025934Z/platform-20160929T025934Z/kernel/amd64/unix -B smartos=true
+initrd /smartos/20160929T025934Z/platform-20160929T025934Z/i86pc/amd64/boot_archive
+boot

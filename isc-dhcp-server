@@ -1,0 +1,3 @@
+# /etc/default/isc-dhcp-server
+DHCPD_CONF=/etc/dhcp/dhcpd.conf
+INTERFACES="eth0"

@@ -19,3 +19,7 @@ Install the scripts on your rpi.
 1. Run `smartpi-setup.sh` to install and configure your raspberry pi as an iPXE boot server.
 2. Run `smartpi-update.sh` to download the latest version of SmartOS.
 3. PXE boot your server. This is easiest via IPMI or a similar remote management feature.
+
+## Notes
+
+The rpi built-in networking is 100mbit. On a wired LAN connection, transferring the SmartOS boot files will take around 30 seconds.
