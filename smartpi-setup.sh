@@ -8,5 +8,8 @@ cp isc-dhcp-server /etc/default/isc-dhcp-server
 service isc-dhcp-server restart
 
 # Setup tftp
-ln -s /usr/lib/ipxe/undionly.kpxe /srv/tftp/undionly.kpxe
+cp tftpd-hpa /etc/default/tftp-hpa
+ln -sf /usr/lib/ipxe/undionly.kpxe /srv/tftp/undionly.kpxe
+service tftpd-hpa restart
 
+chown -R tftp:tftp /srv/tftp
