@@ -12,4 +12,8 @@ cp tftpd-hpa /etc/default/tftpd-hpa
 cp /usr/lib/ipxe/undionly.kpxe /srv/tftp/undionly.kpxe
 service tftpd-hpa restart
 
+# Setup smartos
+cp smartos.ipxe /srv/tftp/smartos.ipxe
+
+# Change ownership so tftpd can read the files
 chown -R tftp:tftp /srv/tftp
